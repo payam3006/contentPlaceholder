@@ -1,0 +1,162 @@
+body {
+  /* How TO - Disable Text Selection */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: lightgray;
+  /* color: white; */
+}
+
+.effect {
+  height: 100%;
+  background: linear-gradient(90deg, lightGray, rgb(186, 186, 186), lightGray);
+  position: absolute;
+  animation: anim 1.3s linear infinite;
+}
+
+@keyframes anim {
+  from {
+    left: -50%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+.main {
+  width: 350px;
+  /* height: 500px; */
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  background-color: whitesmoke;
+  overflow: hidden;
+}
+
+.img {
+  height: 200px;
+}
+
+#img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: lightgray;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 20px;
+}
+
+#content {
+  margin: 10px 0;
+  font-size: smaller;
+}
+
+.person {
+  font-size: smaller;
+}
+
+.person {
+  display: flex;
+  margin-top: 20px;
+}
+.personImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  object-fit: cover;
+  margin-right: 20px;
+
+  /* overflow: hidden; */
+}
+#personImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 20px;
+  position: relative;
+  background-color: lightgray;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.personInfo {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#demo {
+  background-color: lightgrey;
+  width: 100%;
+  height: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+#demo2 {
+  background-color: lightgrey;
+  width: 100%;
+  height: 20px;
+  margin: 2px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+#title {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#personName {
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+.date {
+  font-size: smaller;
+}
+
+.gradientAnimation {
+  height: 30px;
+  width: 100%;
+  background: linear-gradient(90deg, #dddddd 40%, #ffffff 45%, #dddddd 50%);
+  /* background: linear-gradient(90deg, lightGray, rgb(186, 186, 186), lightGray); */
+  background-size: 200% 1%;
+
+  position: absolute;
+  bottom: 0;
+  animation: gradientAnimation 1s ease-in-out infinite;
+  /* animation: anim 1.3s linear infinite; */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
